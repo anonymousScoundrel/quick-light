@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Quick Light</string>
+    <string name="quick_light_torch_off">Light on</string>
+    <string name="quick_light_torch_on">Light off</string>
+    <string name="quick_light_strobe_off">Strobe on</string>
+    <string name="quick_light_strobe_on">Strobe off</string>
+    <string name="quick_light_strobe_interval_button">Change strobe interval</string>
+    <string name="quick_light_strobe_interval_info">Set the strobe interval in milliseconds:</string>
+    <string name="action_about">About</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_about">About</string>
+    <string name="about_contents">
+        I created this application out of a need for flash light app that had both a
+        quick response time and didn\'t require more permissions than were absolutely necessary.\n\n
+        I\'d love to hear any questions or comments from you. Feel free to leave your thoughts in
+        the play store as a review or send them directly to
+        <a href="mailto:dev@null-cipher.com">me</a>.\n\n
+        If you\'d like to help support me as I work to make the Android ecosystem a less intrusive
+        place, please feel free to visit my site and drop off a
+        <a href="http://www.null-cipher.com">donation</a>.
+    </string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="default_strobe_interval_exp">Default strobe interval:</string>
+    <string name="strobe_interval_default">75</string>
+    <string name="default_strobe_max">Default strobe maximum:</string>
+    <string name="strobe_max_default">3000</string>
+    <string name="save_button">Save</string>
+    <string name="save_button_click">Saving preferences&#8230;</string>
+    <string name="incorrect_interval_assignment">Default value cannot be less than the strobe maximum value.</string>
+</resources>

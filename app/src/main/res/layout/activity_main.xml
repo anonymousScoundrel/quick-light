@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Main">
+
+    <TextView
+        android:id="@+id/warnings"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/errors"
+        android:layout_below="@id/warnings"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ToggleButton
+        android:id="@+id/quick_light_torch_button"
+        android:layout_below="@id/errors"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onTorchToggle"
+        android:textOff="@string/quick_light_torch_off"
+        android:textOn="@string/quick_light_torch_on"/>
+
+    <ToggleButton
+        android:id="@+id/quick_light_strobe_button"
+        android:layout_below="@id/quick_light_torch_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onStrobeToggle"
+        android:textOff="@string/quick_light_strobe_off"
+        android:textOn="@string/quick_light_strobe_on" />
+
+    <TextView
+        android:id="@+id/strobe_interval_info"
+        android:layout_below="@id/quick_light_strobe_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quick_light_strobe_interval_info"/>
+
+    <NumberPicker
+        android:id="@+id/strobe_interval_picker"
+        android:layout_below="@id/strobe_interval_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        </NumberPicker>
+
+</RelativeLayout>
